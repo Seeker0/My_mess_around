@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Seeker0/My_mess_around#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "redis": "^2.8.0",
