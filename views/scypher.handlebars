@@ -19,16 +19,27 @@
 
       <label for='url'>Item Link</label>
       <input type='url' name='link'>
+
+      <input type='submit' value='Syphen'>
     </form>
   </section>
 </div>
 
 <div class='row'>
+  <header>Your Stuff</header>
   <div class='col-sm-4 col-offset-1'>
-    <div id='pockets'>Pockets</div>
+    <div id='pockets'>
+      <h2>Pockets</h2>
+      {{#each user.pockets as |pocket|}}
+        <div class='row'><a href="#">{{pocket}}</a></div>
+      {{/each}}
+    </div>
   </div>
   <div class='col-sm-4 col-offset-2'>
-    <div id='contents'>Pocket Contents</div>
+    <div id='pocketContents'>
+      <h2>Pocket Contents</h2>
+      <h3 id='currentPocket'></h3>
+    </div>
   </div>
 
 
